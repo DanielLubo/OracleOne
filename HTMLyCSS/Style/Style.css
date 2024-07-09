@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primario: #000000;
+    --color-secundario:#F6F6F6;
+    --color-terciario: #22D4FD;
+    --color-cuatro: #272727;
+
+    --fuente-monserrat: "Montserrat", sans-serif;
+    --fuente-krona: "Krona One", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin:0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+}
+
+.elheader{
+    padding: 2% 0% 0% 15%;    
+}
+
+.elNav{
+    display: flex;
+    gap: 80px;
+}
+
+.LinksNav{
+    color: var(--color-terciario);
+    font-family: var(--fuente-monserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+.titulo-destaque {
+    color: var(--color-terciario) ;
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    padding: 3% 15%;
+    justify-content: space-between;
+    gap: 82PX;
+}
+
+.preContenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.preTitulo{
+    font-size: 2.25rem;
+    font-family: var(--fuente-krona);
+}
+
+.preParrafo{
+    font-size: 1.5rem;
+    font-family: var(--fuente-monserrat);
+}
+
+.eldiv{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.preEnlaces{    
+    width: 50%;
+    color: var(--color-secundario);
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: var(--fuente-monserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid var(--color-terciario);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.preEnlaces:hover{
+    background-color: var(--color-cuatro);
+}
+
+.subTitulo{
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.ImgPresentacion{
+    width: 50%;
+}
+
+.elfooter{
+    background-color: var(--color-terciario);
+    padding: 1.5rem;
+    color: var(--color-primario);
+    text-align: center;
+    font-family: var(--fuente-monserrat);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+@media(max-width: 1200px){
+    .elheader{
+        padding: 10%;
+    }
+
+    .elNav{
+        justify-content: center;
+    }
+
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .preContenido{
+        width: auto;
+        padding: 10%;
+    }
+}
